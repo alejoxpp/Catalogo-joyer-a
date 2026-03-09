@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Joyería Elegante</title>
+ <!-- Tipografías (serif para títulos, sans para texto) -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/estilo.css" />
+</head>
+<body>
+  <header class="navbar" role="banner">
+    <div class="container nav-inner">
+      <h1 class="logo">Vlover<span class="logo-accent">.</span></h1>
+
+      <nav aria-label="Navegación principal">
+        <ul class="nav-list">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#catalogo">Colección</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="inicio">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h2 class="eyebrow">Colección exclusiva</h2>
+          <h3 class="hero-title">Elegancia en tonos pastel</h3>
+          <p class="hero-sub">Piezas seleccionadas con diseño atemporal — delicadeza y confianza en cada detalle.</p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#catalogo">Explorar colección</a>
+            <a class="btn btn-ghost" href="#sobre">Nuestra historia</a>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <!-- cuadro donde podría ir una imagen destacada -->
+          <div class="showcase-card">
+            <img src="img/hero-product.jpg" alt="Anillo de la colección" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CATALOGO -->
+    <section id="catalogo" class="catalogo">
+      <div class="container">
+        <h3 class="section-title">Nuestra colección</h3>
+        <p class="section-sub">Curaduría de piezas únicas, presentadas con delicadeza.</p>
+
+        <div class="productos" id="productosGrid">
+          <!-- Tarjetas generadas en script.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section id="sobre" class="sobre">
+      <div class="container sobre-inner">
+        <div class="sobre-text">
+          <h4>Artesanía y confianza</h4>
+          <p>Cada pieza es elaborada cuidadosamente; usamos materiales seleccionados y procesos que garantizan calidad. Envíos seguros y soporte directo.</p>
+          <ul class="trust-list">
+            <li>Artesanía certificada</li>
+            <li>Empaque premium</li>
+            <li>Atención personalizada</li>
+          </ul>
+        </div>
+
+        <div class="sobre-image" aria-hidden="true">
+          <img src="img/sobre-brand.jpg" alt="Taller de joyería" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="contacto">
+      <div class="container contacto-inner">
+        <div>
+          <h4>Contacto</h4>
+          <p>¿Interesado en alguna pieza? Escríbenos y te atendemos personalmente.</p>
+        </div>
+        <div>
+          <a id="btnWhatsapp" class="btn btn-whatsapp" href="https://wa.me/573000000000" target="_blank" rel="noopener noreferrer">
+            <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M20.5 3.5A11 11 0 0 0 3.2 20.8L2 22l1.3-.9A11 11 0 1 0 20.5 3.5zM12 20.5c-4.7 0-8.5-3.8-8.5-8.5S7.3 3.5 12 3.5 20.5 7.3 20.5 12 16.7 20.5 12 20.5z"></path></svg>
+            WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Luxury Jewelry — Todos los derechos reservados</p>
+      <p class="small">Envíos y devoluciones según política. Atención directa y segura.</p>
+    </div>
+  </footer>
+
+  <!-- Modal (detalle producto) -->
+  <div id="modal" class="modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-content" role="document">
+      <button id="modalClose" class="modal-close" aria-label="Cerrar">&times;</button>
+      <img id="modalImg" src="" alt="">
+      <div class="modal-info">
+        <h4 id="modalTitle"></h4>
+        <p id="modalDesc"></p>
+        <a id="modalWhatsapp" class="btn btn-whatsapp" href="#" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp</a>
+      </div>
+    </div>
+  </div>
+
+<script src="/joyeria-landing/js/script.js"></script>
+
+</body>
+</html>
