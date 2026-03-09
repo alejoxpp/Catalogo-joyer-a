@@ -13,7 +13,7 @@
 <body>
   <header class="navbar" role="banner">
     <div class="container nav-inner">
-      <h1 class="logo">Vlover<span class="logo-accent">.</span></h1>
+      <h1 class="logo">Vlover<span class="dot">.</span></h1>
 
       <nav aria-label="Navegación principal">
         <ul class="nav-list">
@@ -31,19 +31,24 @@
     <section class="hero">
       <div class="container hero-inner">
         <div class="hero-text">
-          <h2 class="eyebrow">Colección exclusiva</h2>
-          <h3 class="hero-title">Elegancia en tonos pastel</h3>
-          <p class="hero-sub">Piezas seleccionadas con diseño atemporal — delicadeza y confianza en cada detalle.</p>
+          <p class="eyebrow">Colección limitada</p>
+          <h2 class="hero-title">Piezas que provocan miradas</h2>
+          <p class="hero-sub">Diseños delicados, presencia inolvidable. Si algo te enamora, escríbenos: te contamos más.</p>
           <div class="hero-cta">
             <a class="btn btn-primary" href="#catalogo">Explorar colección</a>
-            <a class="btn btn-ghost" href="#sobre">Nuestra historia</a>
+            <a class="btn btn-ghost" href="#contacto">Contactar ahora</a>
+          </div>
+
+          <div class="contact-mini">
+            <span>¿Prefieres escribir ya?</span>
+            <a class="btn btn-whatsapp-sm" href="https://wa.me/+573000000000" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+            <a class="btn btn-ig-sm" href="https://instagram.com/vlover" target="_blank" rel="noopener noreferrer">Instagram</a>
           </div>
         </div>
 
         <div class="hero-visual" aria-hidden="true">
-          <!-- cuadro donde podría ir una imagen destacada -->
           <div class="showcase-card">
-            <img src="img/hero-product.jpg" alt="Anillo de la colección" loading="lazy">
+            <img src="img/hero-product.jpg" alt="Pieza destacada Vlover" loading="lazy">
           </div>
         </div>
       </div>
@@ -53,10 +58,10 @@
     <section id="catalogo" class="catalogo">
       <div class="container">
         <h3 class="section-title">Nuestra colección</h3>
-        <p class="section-sub">Curaduría de piezas únicas, presentadas con delicadeza.</p>
+        <p class="section-sub">Seleccionamos piezas que despiertan deseo. Pregunta por cualquier pieza: te respondemos por WhatsApp o Instagram.</p>
 
         <div class="productos" id="productosGrid">
-          <!-- Tarjetas generadas en script.js -->
+          <!-- Tarjetas generadas por script.js -->
         </div>
       </div>
     </section>
@@ -65,17 +70,17 @@
     <section id="sobre" class="sobre">
       <div class="container sobre-inner">
         <div class="sobre-text">
-          <h4>Artesanía y confianza</h4>
-          <p>Cada pieza es elaborada cuidadosamente; usamos materiales seleccionados y procesos que garantizan calidad. Envíos seguros y soporte directo.</p>
+          <h4>Artesanía Vlover</h4>
+          <p>En Vlover combinamos diseño y cuidado en cada detalle. Empaque premium y atención personalizada para que la experiencia sea perfecta.</p>
           <ul class="trust-list">
-            <li>Artesanía certificada</li>
+            <li>Acabados certificados</li>
             <li>Empaque premium</li>
-            <li>Atención personalizada</li>
+            <li>Soporte directo por WhatsApp</li>
           </ul>
         </div>
 
         <div class="sobre-image" aria-hidden="true">
-          <img src="img/sobre-brand.jpg" alt="Taller de joyería" loading="lazy">
+          <img src="img/sobre-brand.jpg" alt="Taller Vlover" loading="lazy">
         </div>
       </div>
     </section>
@@ -83,15 +88,28 @@
     <!-- CONTACTO -->
     <section id="contacto" class="contacto">
       <div class="container contacto-inner">
-        <div>
-          <h4>Contacto</h4>
-          <p>¿Interesado en alguna pieza? Escríbenos y te atendemos personalmente.</p>
+        <div class="contact-block">
+          <h4>Contacta a Vlover</h4>
+          <p>¿Quieres saber el precio o disponibilidad? Escríbenos y te respondemos rápido. Estamos para acompañarte en cada elección.</p>
+
+          <div class="contact-buttons">
+            <a id="btnWhatsappMain" class="btn btn-whatsapp" href="https://wa.me/+573000000000?text=Hola%20Vlover%2C%20estoy%20interesado%20en%20una%20pieza" target="_blank" rel="noopener noreferrer">
+              <!-- simple icon -->
+              <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M20.5 3.5A11 11 0 0 0 3.2 20.8L2 22l1.3-.9A11 11 0 1 0 20.5 3.5zM12 20.5c-4.7 0-8.5-3.8-8.5-8.5S7.3 3.5 12 3.5 20.5 7.3 20.5 12 16.7 20.5 12 20.5z"></path></svg>
+              WhatsApp
+            </a>
+
+            <a id="btnIGMain" class="btn btn-ig" href="https://instagram.com/vlover" target="_blank" rel="noopener noreferrer">
+              <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7z"></path></svg>
+              Instagram
+            </a>
+          </div>
+
+          <p class="contact-note">Atendemos consultas, personalizaciones y pedidos a medida. Contáctanos — te esperamos con gusto.</p>
         </div>
-        <div>
-          <a id="btnWhatsapp" class="btn btn-whatsapp" href="https://wa.me/573000000000" target="_blank" rel="noopener noreferrer">
-            <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M20.5 3.5A11 11 0 0 0 3.2 20.8L2 22l1.3-.9A11 11 0 1 0 20.5 3.5zM12 20.5c-4.7 0-8.5-3.8-8.5-8.5S7.3 3.5 12 3.5 20.5 7.3 20.5 12 16.7 20.5 12 20.5z"></path></svg>
-            WhatsApp
-          </a>
+
+        <div class="contact-image" aria-hidden="true">
+          <img src="img/contacto.jpg" alt="Contacto Vlover" loading="lazy">
         </div>
       </div>
     </section>
@@ -99,8 +117,8 @@
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p>© <span id="year"></span> Luxury Jewelry — Todos los derechos reservados</p>
-      <p class="small">Envíos y devoluciones según política. Atención directa y segura.</p>
+      <p>© <span id="year"></span> Vlover — Todos los derechos reservados</p>
+      <p class="small">Contáctanos por WhatsApp o Instagram para preguntar por precio y stock.</p>
     </div>
   </footer>
 
@@ -108,11 +126,16 @@
   <div id="modal" class="modal" aria-hidden="true" role="dialog" aria-modal="true">
     <div class="modal-content" role="document">
       <button id="modalClose" class="modal-close" aria-label="Cerrar">&times;</button>
-      <img id="modalImg" src="" alt="">
+      <div class="modal-left">
+        <img id="modalImg" src="" alt="">
+      </div>
       <div class="modal-info">
         <h4 id="modalTitle"></h4>
         <p id="modalDesc"></p>
-        <a id="modalWhatsapp" class="btn btn-whatsapp" href="#" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp</a>
+        <div class="modal-actions">
+          <a id="modalWhatsapp" class="btn btn-whatsapp" href="#" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp</a>
+          <a id="modalIG" class="btn btn-ig" href="https://instagram.com/vlover" target="_blank" rel="noopener noreferrer">Ver en Instagram</a>
+        </div>
       </div>
     </div>
   </div>
