@@ -25,32 +25,36 @@
 
 <main id="inicio">
 
-  <!-- HERO -->
+  <!-- HERO: tablero de tarjetas primero, luego contenido que aparece al hacer scroll -->
   <section class="hero">
-    <div class="container hero-inner">
-      <div class="hero-text">
-        <div class="hero-label">
-          <div class="hero-label-line"></div>
-          <p class="eyebrow" style="margin:0">Colección limitada</p>
-        </div>
-        <h2 class="hero-title">Piezas que<br><em>provocan miradas</em></h2>
-        <p class="hero-sub">Diseños delicados, presencia inolvidable. Si algo te enamora, escríbenos y te contamos todo.</p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="#catalogo">Explorar colección</a>
-          <a class="btn btn-outline" href="#contacto">Contactar ahora</a>
-        </div>
-        <div class="hero-trust">
-          <div class="trust-item"><span class="trust-num">100%</span><span class="trust-label">Acabados certificados</span></div>
-          <div class="trust-item"><span class="trust-num">24h</span><span class="trust-label">Respuesta garantizada</span></div>
-          <div class="trust-item"><span class="trust-num">★ 5.0</span><span class="trust-label">Valoración clientes</span></div>
-        </div>
-      </div>
-
-      <div class="hero-visual" aria-hidden="true">
+    <div class="hero-tablero" aria-hidden="false">
+      <div class="hero-visual hero-visual-tablero">
         <div class="vis-card"><span class="vis-icon">💍</span><span class="vis-name">Anillos</span><span class="vis-badge">Nuevo</span></div>
         <div class="vis-card"><span class="vis-icon">📿</span><span class="vis-name">Collares</span><span class="vis-badge">Top</span></div>
         <div class="vis-card"><span class="vis-icon">✨</span><span class="vis-name">Aretes</span><span class="vis-badge">Exclusivo</span></div>
         <div class="vis-card"><span class="vis-icon">⌚</span><span class="vis-name">Pulseras</span><span class="vis-badge">Limitado</span></div>
+      </div>
+    </div>
+
+    <div class="hero-below reveal" id="heroBelow">
+      <div class="container hero-below-inner">
+        <div class="hero-text">
+          <div class="hero-label">
+            <div class="hero-label-line"></div>
+            <p class="eyebrow" style="margin:0">Colección limitada</p>
+          </div>
+          <h2 class="hero-title">Piezas que<br><em>provocan miradas</em></h2>
+          <p class="hero-sub">Diseños delicados, presencia inolvidable. Si algo te enamora, escríbenos y te contamos todo.</p>
+          <div class="hero-trust">
+            <div class="trust-item"><span class="trust-num">100%</span><span class="trust-label">Acabados certificados</span></div>
+            <div class="trust-item"><span class="trust-num">24h</span><span class="trust-label">Respuesta garantizada</span></div>
+            <div class="trust-item"><span class="trust-num">★ 5.0</span><span class="trust-label">Valoración clientes</span></div>
+          </div>
+        </div>
+        <div class="hero-actions hero-actions-below">
+          <a class="btn btn-primary" href="#" id="openCatalogBtn">Explorar colección</a>
+          <a class="btn btn-outline" href="#contacto">Contactar ahora</a>
+        </div>
       </div>
     </div>
   </section>
@@ -66,7 +70,10 @@
         <h3 class="section-title">Piezas seleccionadas</h3>
         <p class="section-sub">Cada diseño es único. Consulta disponibilidad y precio directamente con nosotros.</p>
       </div>
-      <div class="productos" id="productosGrid"></div>
+      <div class="catalogo-preview-text reveal">
+        <p>Explora una selección curada de anillos, collares, pulseras y aretes pensados para distintos momentos. Ingresa al catálogo completo para ver cada pieza con calma.</p>
+        <button class="btn btn-primary" id="openCatalogBtnSecondary">Ver catálogo completo</button>
+      </div>
     </div>
   </section>
 
@@ -119,6 +126,27 @@
   </section>
 
 </main>
+
+  <!-- CATÁLOGO COMPLETO (VISTA ADYACENTE, FUERA DE MAIN PARA QUE RECIBA CLICKS) -->
+  <section class="catalogo-page" id="catalogoPage" aria-hidden="true">
+    <div class="catalogo-page-inner">
+      <header class="catalogo-page-header">
+        <button class="catalogo-back" id="catalogoBack">← Volver</button>
+        <div class="catalogo-page-title">
+          <p class="eyebrow" style="margin:0 0 6px;">Catálogo Vlover</p>
+          <h3 class="section-title catalogo-page-title-h3">Elige tu categoría</h3>
+        </div>
+        <div class="catalogo-filters" role="tablist" aria-label="Filtrar por categoría">
+          <button class="filter-chip is-active" data-filter="all" role="tab">Todos</button>
+          <button class="filter-chip" data-filter="Anillos" role="tab">Anillos</button>
+          <button class="filter-chip" data-filter="Collares" role="tab">Collares</button>
+          <button class="filter-chip" data-filter="Pulseras" role="tab">Pulseras</button>
+          <button class="filter-chip" data-filter="Aretes" role="tab">Aretes</button>
+        </div>
+      </header>
+      <div class="catalogo-grid" id="catalogoGrid"></div>
+    </div>
+  </section>
 
 <footer class="site-footer">
   <div class="container footer-inner">
