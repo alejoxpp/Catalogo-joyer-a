@@ -88,7 +88,6 @@ body::before {
 }
 .btn-primary:hover { box-shadow: 0 12px 30px rgba(224,96,142,0.42); }
 
-
 .btn-outline {
   background: transparent;
   border: 1.5px solid var(--accent);
